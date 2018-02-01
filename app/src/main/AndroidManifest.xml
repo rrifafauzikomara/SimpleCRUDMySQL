@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rrifafauzikomara.biodatadiri">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DataDiri" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".UpdateDataDiri" />
+        <activity android:name=".MenuUtama" />
+        <activity android:name=".Register" />
+        <activity android:name=".DataUser" />
+        <activity android:name=".UpdateUser" />
+        <activity android:name=".Makanan" />
+        <activity android:name=".DataMakanan" />
+        <activity android:name=".UpdateMakanan" />
+        <activity android:name=".Minuman" />
+        <activity android:name=".DataMinuman" />
+        <activity android:name=".UpdateMinuman"></activity>
+    </application>
+
+</manifest>
