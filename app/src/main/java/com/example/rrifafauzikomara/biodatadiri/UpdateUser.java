@@ -93,7 +93,7 @@ public class UpdateUser extends AppCompatActivity {
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequestParam("http://192.168.12.105/android/User/get_user.php?id=",id);
+                String s = rh.sendGetRequestParam("http://192.168.20.101/web_service/User/get_user.php?id=",id);
                 return s;
             }
         }
@@ -174,7 +174,7 @@ public class UpdateUser extends AppCompatActivity {
 
                 RequestHandler rh = new RequestHandler();
 
-                String s = rh.sendPostRequest("http://192.168.12.105/android/User/update_user.php", hashMap);
+                String s = rh.sendPostRequest("http://192.168.20.101/web_service/User/update_user.php", hashMap);
 
                 return s;
             }
@@ -204,7 +204,7 @@ public class UpdateUser extends AppCompatActivity {
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequestParam("http://192.168.12.105/android/User/delete_user.php?id=", id);
+                String s = rh.sendGetRequestParam("http://192.168.20.101/web_service/User/delete_user.php?id=", id);
                 return s;
             }
         }

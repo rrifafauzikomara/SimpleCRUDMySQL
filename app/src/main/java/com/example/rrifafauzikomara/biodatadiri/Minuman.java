@@ -18,7 +18,7 @@ public class Minuman extends AppCompatActivity {
     private EditText editTextName, editTextPeru, editTextNetto, editTextPesan;
     private RadioGroup rgSedotan, rgTempat;
     private Button buttonAdd, buttonView, buttonBack;
-    private static final String REGISTER_URL = "http://192.168.12.105/android/Minuman/minuman.php";
+    private static final String REGISTER_URL = "http://192.168.20.101/web_service/Minuman/minuman.php";
     String nama_minuman, perusahaan, netto, sedotan, tempat, nama_pemesan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +72,6 @@ public class Minuman extends AppCompatActivity {
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Minuman.this, MenuUtama.class));
                 finish();
             }
         });

@@ -22,7 +22,7 @@ public class Makanan extends AppCompatActivity {
     private Button buttonView;
     private Button buttonBack;
 
-    private static final String REGISTER_URL = "http://192.168.12.105/android/Makanan/makanan.php";
+    private static final String REGISTER_URL = "http://192.168.20.101/web_service/Makanan/makanan.php";
     String nama_makanan, asal_makanan, harga_makanan;
 
     @Override
@@ -51,7 +51,6 @@ public class Makanan extends AppCompatActivity {
         buttonBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(Makanan.this, MenuUtama.class));
                 finish();
             }
         });

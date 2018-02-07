@@ -87,7 +87,7 @@ public class UpdateDataDiri extends AppCompatActivity {
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequestParam("http://192.168.12.105/android/Kesan/get_kesan.php?id=",id);
+                String s = rh.sendGetRequestParam("http://192.168.20.101/web_service/Kesan/get_kesan.php?id=",id);
                 return s;
             }
         }
@@ -156,7 +156,7 @@ public class UpdateDataDiri extends AppCompatActivity {
 
                 RequestHandler rh = new RequestHandler();
 
-                String s = rh.sendPostRequest("http://192.168.12.105/android/Kesan/update_kesan.php", hashMap);
+                String s = rh.sendPostRequest("http://192.168.20.101/web_service/Kesan/update_kesan.php", hashMap);
 
                 return s;
             }
@@ -186,7 +186,7 @@ public class UpdateDataDiri extends AppCompatActivity {
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequestParam("http://192.168.12.105/android/Kesan/delete_kesan.php?id=", id);
+                String s = rh.sendGetRequestParam("http://192.168.20.101/web_service/delete_kesan.php?id=", id);
                 return s;
             }
         }

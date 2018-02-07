@@ -88,7 +88,7 @@ public class UpdateMakanan extends AppCompatActivity {
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequestParam("http://192.168.12.105/android/Makanan/get_makanan.php?no=",id);
+                String s = rh.sendGetRequestParam("http://192.168.20.101/web_service/Makanan/get_makanan.php?no=",id);
                 return s;
             }
         }
@@ -142,7 +142,7 @@ public class UpdateMakanan extends AppCompatActivity {
 
                 RequestHandler rh = new RequestHandler();
 
-                String s = rh.sendPostRequest("http://192.168.12.105/android/Makanan/update_makanan.php", hashMap);
+                String s = rh.sendPostRequest("http://192.168.20.101/web_service/Makanan/update_makanan.php", hashMap);
 
                 return s;
             }
@@ -171,7 +171,7 @@ public class UpdateMakanan extends AppCompatActivity {
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequestParam("http://192.168.12.105/android/Makanan/delete_makanan.php?no=", id);
+                String s = rh.sendGetRequestParam("http://192.168.20.101/web_service/Makanan/delete_makanan.php?no=", id);
                 return s;
             }
         }

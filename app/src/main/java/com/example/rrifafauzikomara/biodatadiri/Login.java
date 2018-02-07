@@ -17,7 +17,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
 
     public static final String USER_NAME = "USER_NAME";
 
-    private static final String LOGIN_URL = "http://192.168.12.105/android/login.php";
+    private static final String LOGIN_URL = "http://192.168.20.101/web_service/login.php";
 
     private EditText editTextUserName;
     private EditText editTextPassword;

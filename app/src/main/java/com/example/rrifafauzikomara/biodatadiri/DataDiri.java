@@ -78,7 +78,7 @@ public class DataDiri extends AppCompatActivity {
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequest("http://192.168.12.105/Kesaandroid/n/get_all_kesan.php");
+                String s = rh.sendGetRequest("http://192.168.20.101/web_service/Kesan/get_all_kesan.php");
                 return s;
             }
         }

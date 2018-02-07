@@ -94,7 +94,7 @@ public class UpdateMinuman extends AppCompatActivity {
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequestParam("http://192.168.12.105/android/Minuman/get_minuman.php?no=",id);
+                String s = rh.sendGetRequestParam("http://192.168.20.101/web_service/Minuman/get_minuman.php?no=",id);
                 return s;
             }
         }
@@ -178,7 +178,7 @@ public class UpdateMinuman extends AppCompatActivity {
 
                 RequestHandler rh = new RequestHandler();
 
-                String s = rh.sendPostRequest("http://192.168.12.105/android/Minuman/update_minuman.php", hashMap);
+                String s = rh.sendPostRequest("http://192.168.20.101/web_service/Minuman/update_minuman.php", hashMap);
 
                 return s;
             }
@@ -207,7 +207,7 @@ public class UpdateMinuman extends AppCompatActivity {
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequestParam("http://192.168.12.105/android/Minuman/delete_minuman.php?no=", id);
+                String s = rh.sendGetRequestParam("http://192.168.20.101/web_service/Minuman/delete_minuman.php?no=", id);
                 return s;
             }
         }

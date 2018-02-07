@@ -18,7 +18,7 @@ public class Register extends AppCompatActivity {
     private EditText editTextNama, editTextEmail, editTextUsername, editTextPassword, editTextAlamat, editTextTelp;
     private Button btnDaftar, btnKembali;
     private RadioGroup rgJenkel;
-    private static final String REGISTER_URL = "http://192.168.12.105/android/User/register.php";
+    private static final String REGISTER_URL = "http://192.168.20.101/web_service/User/register.php";
     String fullname, email, username, password, gender, address, city, telp;
 
     @Override
